@@ -1,0 +1,77 @@
+﻿  CBounding_AABB.cpp
+  CBounding_OBB.cpp
+  CBounding_Sphere.cpp
+  CCollider.cpp
+  CColliderManager.cpp
+  CGameManger.cpp
+  CObject.cpp
+  CShader.cpp
+  코드를 생성하고 있습니다...
+DirectXTKD.lib(PrimitiveBatch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(PrimitiveBatch.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(BasicEffect.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(BasicEffect.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(VertexTypes.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(VertexTypes.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(pch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(pch.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(EffectCommon.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(EffectCommon.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectAPI.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectAPI.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(d3dxGlobal.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectNonRuntime.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectLoad.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectLoad.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectReflection.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectReflection.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectRuntime.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+     ../Bin/Engine.lib 라이브러리 및 ../Bin/Engine.exp 개체를 생성하고 있습니다.
+  Engine.vcxproj -> C:\Projects\DirectX\DirectX\Engine\Bin\Engine.dll
+  .\Engine\Public\CBase.h
+  .\Engine\Public\CBounding.h
+  .\Engine\Public\CBounding_AABB.h
+  .\Engine\Public\CBounding_OBB.h
+  .\Engine\Public\CBounding_Sphere.h
+  .\Engine\Public\CCollider.h
+  .\Engine\Public\CColliderManager.h
+  .\Engine\Public\CGameManger.h
+  .\Engine\Public\CGraphic.h
+  .\Engine\Public\CInput.h
+  .\Engine\Public\CObject.h
+  .\Engine\Public\CObjectManager.h
+  .\Engine\Public\CShader.h
+  .\Engine\Public\CTransform.h
+  .\Engine\Public\CVtxBuffer.h
+  .\Engine\Public\DebugDraw.h
+  .\Engine\Public\Engine_Define.h
+  .\Engine\Public\Engine_Function.h
+  .\Engine\Public\Engine_Macro.h
+  .\Engine\Public\Engine_Struct.h
+  .\Engine\Public\Engine_Typedef.h
+  .\Engine\Public\DirectXTK\Audio.h
+  .\Engine\Public\DirectXTK\BufferHelpers.h
+  .\Engine\Public\DirectXTK\CommonStates.h
+  .\Engine\Public\DirectXTK\DDSTextureLoader.h
+  .\Engine\Public\DirectXTK\DirectXHelpers.h
+  .\Engine\Public\DirectXTK\Effects.h
+  .\Engine\Public\DirectXTK\GamePad.h
+  .\Engine\Public\DirectXTK\GeometricPrimitive.h
+  .\Engine\Public\DirectXTK\GraphicsMemory.h
+  .\Engine\Public\DirectXTK\Keyboard.h
+  .\Engine\Public\DirectXTK\Model.h
+  .\Engine\Public\DirectXTK\Mouse.h
+  .\Engine\Public\DirectXTK\PostProcess.h
+  .\Engine\Public\DirectXTK\PrimitiveBatch.h
+  .\Engine\Public\DirectXTK\ScreenGrab.h
+  .\Engine\Public\DirectXTK\SimpleMath.h
+  .\Engine\Public\DirectXTK\SimpleMath.inl
+  .\Engine\Public\DirectXTK\SpriteBatch.h
+  .\Engine\Public\DirectXTK\SpriteFont.h
+  .\Engine\Public\DirectXTK\VertexTypes.h
+  .\Engine\Public\DirectXTK\WICTextureLoader.h
+  .\Engine\Public\DirectXTK\XboxDDSTextureLoader.h
+  .\Engine\Public\Effects11\d3dx11effect.h
+  .\Engine\Public\Effects11\d3dxGlobal.h
+  45개 파일이 복사되었습니다.
+  .\Engine\Bin\Engine.dll
+  1개 파일이 복사되었습니다.
+  .\Engine\Bin\Engine.lib
+  1개 파일이 복사되었습니다.
+  .\Engine\Lib\DirectXTK.lib
+  .\Engine\Lib\DirectXTKD.lib
+  .\Engine\Lib\Effects11.lib
+  .\Engine\Lib\Effects11d.lib
+  4개 파일이 복사되었습니다.

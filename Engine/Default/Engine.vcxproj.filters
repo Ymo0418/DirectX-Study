@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="98.Define">
+      <UniqueIdentifier>{45d9929f-a5ca-4426-8aa1-62ab29c27c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Base">
+      <UniqueIdentifier>{582fc7cc-0b10-4f5f-9df4-1d5f8caabb31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Device">
+      <UniqueIdentifier>{b0ef8874-259c-47fb-ab19-aeddc1cc8430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.GameManager">
+      <UniqueIdentifier>{302cd0cf-68e1-4a47-8015-7b1790002001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Object">
+      <UniqueIdentifier>{de740dea-7180-4174-8544-b4fd1ae85216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Shader">
+      <UniqueIdentifier>{9bfb0501-fb4b-4caf-abd5-3f95cc32fcab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Component">
+      <UniqueIdentifier>{d83005e5-215b-4c38-8185-afe7a751b451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collider">
+      <UniqueIdentifier>{503d4dbc-87de-43dd-b6c8-dd8ea6bee1e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Engine_Define.h">
+      <Filter>98.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Engine_Struct.h">
+      <Filter>98.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Engine_Function.h">
+      <Filter>98.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Engine_Typedef.h">
+      <Filter>98.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Engine_Macro.h">
+      <Filter>98.Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CBase.h">
+      <Filter>99.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CGraphic.h">
+      <Filter>00.Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CGameManger.h">
+      <Filter>01.GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CShader.h">
+      <Filter>02.Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CObject.h">
+      <Filter>01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CInput.h">
+      <Filter>00.Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CObjectManager.h">
+      <Filter>01.Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CTransform.h">
+      <Filter>03.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CVtxBuffer.h">
+      <Filter>03.Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CBounding.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CBounding_AABB.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CBounding_OBB.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CBounding_Sphere.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CCollider.h">
+      <Filter>Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CColliderManager.h" />
+    <ClInclude Include="..\Public\DebugDraw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Private\CBase.cpp">
+      <Filter>99.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CGraphic.cpp">
+      <Filter>00.Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CGameManger.cpp">
+      <Filter>01.GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CShader.cpp">
+      <Filter>02.Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Engine_Struct.cpp">
+      <Filter>98.Define</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CObject.cpp">
+      <Filter>01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CInput.cpp">
+      <Filter>00.Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CObjectManager.cpp">
+      <Filter>01.Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CTransform.cpp">
+      <Filter>03.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CVtxBuffer.cpp">
+      <Filter>03.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CBounding.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CBounding_AABB.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CBounding_OBB.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CBounding_Sphere.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CCollider.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CColliderManager.cpp" />
+    <ClCompile Include="..\Private\DebugDraw.cpp" />
+  </ItemGroup>
+</Project>
