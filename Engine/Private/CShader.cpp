@@ -28,7 +28,7 @@ HRESULT CShader::Initialize(const wchar_t* _pFilePath, const D3D11_INPUT_ELEMENT
 										  &m_pEffect,
 										  nullptr)))
 	{
-		cout << "Failed Compile Shader" << endl;
+		MSG_BOX("Failed Compile Shader");
 		return E_FAIL;
 	}
 

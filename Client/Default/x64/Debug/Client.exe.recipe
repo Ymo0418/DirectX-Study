@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Projects\DirectX\DirectX\Client\Bin\Client.exe</FullPath>
+      <FullPath>D:\GitHub\DirectX-Study\Client\Bin\Client.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Projects\DirectX\DirectX\Client\Bin\Squre.cso</FullPath>
+      <FullPath>D:\GitHub\DirectX-Study\Client\Bin\Squre.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

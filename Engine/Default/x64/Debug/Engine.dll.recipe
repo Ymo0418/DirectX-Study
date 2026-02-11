@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Projects\DirectX\DirectX\Engine\Bin\Engine.dll</FullPath>
+      <FullPath>D:\GitHub\DirectX-Study\Engine\Bin\Engine.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

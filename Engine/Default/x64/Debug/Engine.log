@@ -1,4 +1,5 @@
-﻿  CBounding_AABB.cpp
+﻿  CBounding.cpp
+  CBounding_AABB.cpp
   CBounding_OBB.cpp
   CBounding_Sphere.cpp
   CCollider.cpp
@@ -6,20 +7,21 @@
   CGameManger.cpp
   CObject.cpp
   CShader.cpp
+  CTransform.cpp
   코드를 생성하고 있습니다...
-DirectXTKD.lib(PrimitiveBatch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(PrimitiveBatch.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-DirectXTKD.lib(BasicEffect.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(BasicEffect.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-DirectXTKD.lib(VertexTypes.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(VertexTypes.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-DirectXTKD.lib(pch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(pch.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-DirectXTKD.lib(EffectCommon.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKD.lib(EffectCommon.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(EffectAPI.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectAPI.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(d3dxGlobal.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectNonRuntime.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(EffectLoad.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectLoad.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(EffectReflection.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectReflection.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
-Effects11d.lib(EffectRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectRuntime.obj)' 또는 'C:\Projects\DirectX\DirectX\Engine\Bin\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(PrimitiveBatch.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(PrimitiveBatch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(BasicEffect.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(BasicEffect.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(VertexTypes.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(VertexTypes.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(pch.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(pch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKD.lib(EffectCommon.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(EffectCommon.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectAPI.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(EffectAPI.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(d3dxGlobal.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(EffectNonRuntime.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectLoad.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(EffectLoad.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectReflection.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(EffectReflection.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectRuntime.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(EffectRuntime.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
      ../Bin/Engine.lib 라이브러리 및 ../Bin/Engine.exp 개체를 생성하고 있습니다.
-  Engine.vcxproj -> C:\Projects\DirectX\DirectX\Engine\Bin\Engine.dll
+  Engine.vcxproj -> D:\GitHub\DirectX-Study\Engine\Bin\Engine.dll
   .\Engine\Public\CBase.h
   .\Engine\Public\CBounding.h
   .\Engine\Public\CBounding_AABB.h

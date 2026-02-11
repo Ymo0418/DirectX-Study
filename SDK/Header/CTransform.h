@@ -15,6 +15,8 @@ public:
 	void Set_Scale(XMVECTOR _vScale);
 	void Set_Rot(XMVECTOR _vRot);
 	void Set_Pos(XMVECTOR _vPos);
+	XMVECTOR Get_Pos();
+	void Add_Pos(XMVECTOR _vMovement);
 	HRESULT Bind_Matrix(class CShader* _pShader, const char* _pName);
 	XMMATRIX Get_WorldMatrix();
 

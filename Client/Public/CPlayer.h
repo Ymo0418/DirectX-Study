@@ -31,6 +31,9 @@ protected:
 	CTransform*	m_pTransform	= { nullptr };
 	CCollider*	m_pCollider		= { nullptr };
 
+	float		m_fJumpingTime = { 0.f };
+	bool		m_bJumping = { false };
+
 public:
 	static CPlayer* Create(ID3D11Device* _pDevice, ID3D11DeviceContext* _pContext);
 	void Free() override;

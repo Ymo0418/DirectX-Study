@@ -39,9 +39,10 @@ void CGameManger::Update(float _fTimeDelta)
 
 	m_pObjectManager->Early_Update(_fTimeDelta);
 	m_pObjectManager->Update(_fTimeDelta);
-	m_pObjectManager->Late_Update(_fTimeDelta);
 
 	m_pColliderManager->Update();
+
+	m_pObjectManager->Late_Update(_fTimeDelta);
 }
 
 void CGameManger::Draw()

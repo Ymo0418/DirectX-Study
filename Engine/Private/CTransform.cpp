@@ -54,6 +54,18 @@ void CTransform::Set_Pos(XMVECTOR _vPos)
 	XMStoreFloat4((XMFLOAT4*)(&m_matWorld.m[3][0]), _vPos);
 }
 
+XMVECTOR CTransform::Get_Pos()
+{
+	return XMLoadFloat4((XMFLOAT4*)(&m_matWorld.m[3][0]));
+}
+
+void CTransform::Add_Pos(XMVECTOR _vMovement)
+{
+	XMVECTOR vCurPos = XMLoadFloat4x4(&m_matWorld).r[3];
+
+	Set_Pos(vCurPos + _vMovement);
+}
+
 HRESULT CTransform::Bind_Matrix(CShader* _pShader, const char* _pName)
 {
 	return _pShader->Bind_Matrix(_pName, &m_matWorld);

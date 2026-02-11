@@ -48,6 +48,8 @@ HRESULT CCollider::Initialize(COL_TYPE _eType, void* _pBoundingDesc)
 void CCollider::Update(XMMATRIX _matWorld)
 {
 	m_pBounding->Update(_matWorld);
+
+	m_tCollisionInfo.pBounding = nullptr;
 }
 
 #ifdef _DEBUG

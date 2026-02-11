@@ -34,34 +34,79 @@ HRESULT CPlayer::Initialize()
 
 void CPlayer::Early_Update(float _fTimeDelta)
 {
-	CCollider::CollisionInfo tColInfo = m_pCollider->Get_CollisionInfo();
-	CBounding_AABB* pBounding = static_cast<CBounding_AABB*>(tColInfo.pBounding);
-	const BoundingBox* pBoundingBox = pBounding->Get_BoundingBox();
-
-	CBounding_AABB* pMyBounding = static_cast<CBounding_AABB*>(m_pCollider->Get_Bounding());
-	const BoundingBox* pMyBoundingBox = pMyBounding->Get_BoundingBox();
-
-	//벽 못지나가는거, Transform Move함수
 }
 
 void CPlayer::Update(float _fTimeDelta)
 {
-	static float x = { 0 };
-	static float y = { 0 };
-	static float z = { 0 };
-
 	if (m_pGameManager->GetKey(DIK_A))
-		x -= 0.001f;
+		m_pTransform->Add_Pos({ -_fTimeDelta, 0.f, 0.f ,0.f });
 	if (m_pGameManager->GetKey(DIK_D))
-		x += 0.001f;
+		m_pTransform->Add_Pos({ _fTimeDelta, 0.f, 0.f ,0.f });
 
-	m_pTransform->Set_Pos({ x,y,z,1.f });
+	if (!m_bJumping && m_pGameManager->GetKey(DIK_SPACE))
+	{
+		m_fJumpingTime = 0.f;
+		m_bJumping = true;
+	}
+
+	if (m_bJumping)
+	{
+		float fMove = sinf(XMConvertToRadians(45.f)) - 9.8f * m_fJumpingTime;
+		m_pTransform->Add_Pos({ 0.f, fMove, 0.f});
+
+		m_fJumpingTime += _fTimeDelta;
+
+		XMVECTOR vCurPos = m_pTransform->Get_Pos();
+		if (XMVectorGetY(vCurPos) < 0.f)
+		{
+			XMVECTOR vGroundPos = XMVectorSetY(vCurPos, 0.f);
+			m_pTransform->Set_Pos(vGroundPos);
+			m_bJumping = false;
+		}
+	}
+
 	m_pCollider->Update(m_pTransform->Get_WorldMatrix());
+
+	m_pGameManager->Add_Collider(CColliderManager::CG_PLAYER, m_pCollider);
 }
 
 void CPlayer::Late_Update(float _fTimeDelta)
 {
-	m_pGameManager->Add_Collider(CColliderManager::CG_PLAYER, m_pCollider);
+	CCollider::CollisionInfo tColInfo = m_pCollider->Get_CollisionInfo();
+
+	if (nullptr != tColInfo.pBounding)
+	{
+		CBounding_AABB* pTargetBounding = static_cast<CBounding_AABB*>(tColInfo.pBounding);
+		const BoundingBox* pTargetBox = pTargetBounding->Get_BoundingBox();
+
+		CBounding_AABB* pMyBounding = static_cast<CBounding_AABB*>(m_pCollider->Get_Bounding());
+		const BoundingBox* pMyBox = pMyBounding->Get_BoundingBox();
+
+		float myRect[4] = { pMyBox->Center.x - pMyBox->Extents.x,
+							pMyBox->Center.y + pMyBox->Extents.y,
+							pMyBox->Center.x + pMyBox->Extents.x,
+							pMyBox->Center.y - pMyBox->Extents.y };
+		float targetRect[4] = { pTargetBox->Center.x - pTargetBox->Extents.x,
+								pTargetBox->Center.y + pTargetBox->Extents.y,
+								pTargetBox->Center.x + pTargetBox->Extents.x,
+								pTargetBox->Center.y - pTargetBox->Extents.y };
+
+		float difX, difY;
+		if (myRect[2] < targetRect[2])
+			difX = -(myRect[2] - targetRect[0]);
+		else
+			difX = targetRect[2] - myRect[0];
+
+		if (myRect[3] > targetRect[3])
+			difY = targetRect[1] - myRect[3];
+		else
+			difY = -(myRect[1] - targetRect[3]);
+
+		if(abs(difX) < abs(difY))
+			m_pTransform->Add_Pos({difX, 0.f, 0.f, 0.f});
+		else
+			m_pTransform->Add_Pos({0.f, difY, 0.f, 0.f});
+	}
 }
 
 HRESULT CPlayer::Render()
@@ -84,6 +129,7 @@ HRESULT CPlayer::Render()
 	m_pVertexBuffer->Render();
 
 #ifdef _DEBUG
+	m_pCollider->Update(m_pTransform->Get_WorldMatrix());
 	m_pCollider->Render();
 #endif // _DEBUG
 
