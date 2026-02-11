@@ -157,6 +157,7 @@ call UpdateLib.bat</Command>
     <ClInclude Include="..\Public\CGameManger.h" />
     <ClInclude Include="..\Public\CGraphic.h" />
     <ClInclude Include="..\Public\CInput.h" />
+    <ClInclude Include="..\Public\CNavigation.h" />
     <ClInclude Include="..\Public\CObject.h" />
     <ClInclude Include="..\Public\CObjectManager.h" />
     <ClInclude Include="..\Public\CShader.h" />
@@ -168,6 +169,7 @@ call UpdateLib.bat</Command>
     <ClInclude Include="..\Public\Engine_Macro.h" />
     <ClInclude Include="..\Public\Engine_Struct.h" />
     <ClInclude Include="..\Public\Engine_Typedef.h" />
+    <ClInclude Include="..\Public\LINE.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Private\CBase.cpp" />
@@ -180,6 +182,7 @@ call UpdateLib.bat</Command>
     <ClCompile Include="..\Private\CGameManger.cpp" />
     <ClCompile Include="..\Private\CGraphic.cpp" />
     <ClCompile Include="..\Private\CInput.cpp" />
+    <ClCompile Include="..\Private\CNavigation.cpp" />
     <ClCompile Include="..\Private\CObject.cpp" />
     <ClCompile Include="..\Private\CObjectManager.cpp" />
     <ClCompile Include="..\Private\CShader.cpp" />
@@ -187,6 +190,7 @@ call UpdateLib.bat</Command>
     <ClCompile Include="..\Private\CVtxBuffer.cpp" />
     <ClCompile Include="..\Private\DebugDraw.cpp" />
     <ClCompile Include="..\Private\Engine_Struct.cpp" />
+    <ClCompile Include="..\Private\LINE.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

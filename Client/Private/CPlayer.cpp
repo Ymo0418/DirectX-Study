@@ -4,6 +4,7 @@
 #include "CVtxBuffer.h"
 #include "CTransform.h"
 #include "CCollider.h"
+#include "CNavigation.h"
 
 CPlayer::CPlayer(ID3D11Device* _pDevice, ID3D11DeviceContext* _pContext)
 	: CObject{ _pDevice, _pContext }
@@ -29,6 +30,9 @@ HRESULT CPlayer::Initialize()
 	m_pCollider = CCollider::Create(m_pDevice, m_pContext, CCollider::COL_AABB, &ColDesc);
 	if (!m_pCollider)		__debugbreak();
 
+	m_pNavigation = CNavigation::Create(m_pDevice, m_pContext);
+	if (!m_pNavigation)		__debugbreak();
+
 	return S_OK;
 }
 
@@ -51,7 +55,7 @@ void CPlayer::Update(float _fTimeDelta)
 
 	if (m_bJumping)
 	{
-		float fMove = sinf(XMConvertToRadians(45.f)) - 9.8f * m_fJumpingTime;
+		float fMove = sinf(XMConvertToRadians(20.f)) - 0.98f * m_fJumpingTime;
 		m_pTransform->Add_Pos({ 0.f, fMove, 0.f});
 
 		m_fJumpingTime += _fTimeDelta;
@@ -131,6 +135,8 @@ HRESULT CPlayer::Render()
 #ifdef _DEBUG
 	m_pCollider->Update(m_pTransform->Get_WorldMatrix());
 	m_pCollider->Render();
+
+	m_pNavigation->Render();
 #endif // _DEBUG
 
 	return S_OK;

@@ -8,6 +8,7 @@ class CShader;
 class CVtxBuffer;
 class CTransform;
 class CCollider;
+class CNavigation;
 END
 
 BEGIN(Client)
@@ -30,6 +31,7 @@ protected:
 	CVtxBuffer*	m_pVertexBuffer = { nullptr };
 	CTransform*	m_pTransform	= { nullptr };
 	CCollider*	m_pCollider		= { nullptr };
+	CNavigation*m_pNavigation	= { nullptr };
 
 	float		m_fJumpingTime = { 0.f };
 	bool		m_bJumping = { false };

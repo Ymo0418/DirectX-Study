@@ -1,14 +1,6 @@
-﻿  CBounding.cpp
-  CBounding_AABB.cpp
-  CBounding_OBB.cpp
-  CBounding_Sphere.cpp
-  CCollider.cpp
-  CColliderManager.cpp
-  CGameManger.cpp
-  CObject.cpp
-  CShader.cpp
-  CTransform.cpp
-  코드를 생성하고 있습니다...
+﻿  CNavigation.cpp
+D:\GitHub\DirectX-Study\Engine\Private\CNavigation.cpp(43,8): warning C4101: 'NearHeight' :참조되지 않은 지역 변수입니다.
+D:\GitHub\DirectX-Study\Engine\Private\CNavigation.cpp(44,8): warning C4101: 'NearUndewHeight' :참조되지 않은 지역 변수입니다.
 DirectXTKD.lib(PrimitiveBatch.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(PrimitiveBatch.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
 DirectXTKD.lib(BasicEffect.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(BasicEffect.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
 DirectXTKD.lib(VertexTypes.obj) : warning LNK4099: '' PDB를 'DirectXTKD.lib(VertexTypes.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
@@ -32,6 +24,7 @@ Effects11d.lib(EffectRuntime.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(E
   .\Engine\Public\CGameManger.h
   .\Engine\Public\CGraphic.h
   .\Engine\Public\CInput.h
+  .\Engine\Public\CNavigation.h
   .\Engine\Public\CObject.h
   .\Engine\Public\CObjectManager.h
   .\Engine\Public\CShader.h
@@ -43,6 +36,7 @@ Effects11d.lib(EffectRuntime.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(E
   .\Engine\Public\Engine_Macro.h
   .\Engine\Public\Engine_Struct.h
   .\Engine\Public\Engine_Typedef.h
+  .\Engine\Public\LINE.h
   .\Engine\Public\DirectXTK\Audio.h
   .\Engine\Public\DirectXTK\BufferHelpers.h
   .\Engine\Public\DirectXTK\CommonStates.h
@@ -67,7 +61,7 @@ Effects11d.lib(EffectRuntime.obj) : warning LNK4099: '' PDB를 'Effects11d.lib(E
   .\Engine\Public\DirectXTK\XboxDDSTextureLoader.h
   .\Engine\Public\Effects11\d3dx11effect.h
   .\Engine\Public\Effects11\d3dxGlobal.h
-  45개 파일이 복사되었습니다.
+  47개 파일이 복사되었습니다.
   .\Engine\Bin\Engine.dll
   1개 파일이 복사되었습니다.
   .\Engine\Bin\Engine.lib

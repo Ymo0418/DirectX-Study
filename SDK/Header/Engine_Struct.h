@@ -18,4 +18,9 @@ namespace Engine
 		static const uint iNumElemet = 2;
 		static const D3D11_INPUT_ELEMENT_DESC Elements[2];
 	};
+
+	struct FPOINT
+	{
+		float x, y;
+	};
 }

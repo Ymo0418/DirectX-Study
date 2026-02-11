@@ -8,6 +8,7 @@ D:\GitHub\DirectX-Study\Engine\Private\CColliderManager.cpp;D:\GitHub\DirectX-St
 D:\GitHub\DirectX-Study\Engine\Private\CGameManger.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CGameManger.obj
 D:\GitHub\DirectX-Study\Engine\Private\CGraphic.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CGraphic.obj
 D:\GitHub\DirectX-Study\Engine\Private\CInput.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CInput.obj
+D:\GitHub\DirectX-Study\Engine\Private\CNavigation.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CNavigation.obj
 D:\GitHub\DirectX-Study\Engine\Private\CObject.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CObject.obj
 D:\GitHub\DirectX-Study\Engine\Private\CObjectManager.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CObjectManager.obj
 D:\GitHub\DirectX-Study\Engine\Private\CShader.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CShader.obj
@@ -15,3 +16,4 @@ D:\GitHub\DirectX-Study\Engine\Private\CTransform.cpp;D:\GitHub\DirectX-Study\En
 D:\GitHub\DirectX-Study\Engine\Private\CVtxBuffer.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\CVtxBuffer.obj
 D:\GitHub\DirectX-Study\Engine\Private\DebugDraw.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\DebugDraw.obj
 D:\GitHub\DirectX-Study\Engine\Private\Engine_Struct.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\Engine_Struct.obj
+D:\GitHub\DirectX-Study\Engine\Private\LINE.cpp;D:\GitHub\DirectX-Study\Engine\Default\x64\Debug\LINE.obj

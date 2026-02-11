@@ -86,6 +86,8 @@
     </ClInclude>
     <ClInclude Include="..\Public\CColliderManager.h" />
     <ClInclude Include="..\Public\DebugDraw.h" />
+    <ClInclude Include="..\Public\LINE.h" />
+    <ClInclude Include="..\Public\CNavigation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Private\CBase.cpp">
@@ -135,5 +137,7 @@
     </ClCompile>
     <ClCompile Include="..\Private\CColliderManager.cpp" />
     <ClCompile Include="..\Private\DebugDraw.cpp" />
+    <ClCompile Include="..\Private\LINE.cpp" />
+    <ClCompile Include="..\Private\CNavigation.cpp" />
   </ItemGroup>
 </Project>
